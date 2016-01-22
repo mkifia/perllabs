@@ -38,8 +38,8 @@ print "\n";
 my $v = "##########";
 for(my $j=9; $j>0; $j--) {
 
-	print ("$j impaire") if ($j%2);
-	print ("-"x$j) unless($j%3);
+	print ("$j impaire\n") if ($j%2);
+	print ("-"x$j. "\n") unless($j%3);
 	substr($v, $j, 0) = $j;
 }
 print ("$v\n");
