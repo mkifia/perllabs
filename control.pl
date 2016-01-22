@@ -17,9 +17,29 @@ if($x eq $y) {
 for(my $i=0; $i<=10; $i++) {
 	print "$i\n";
 }
+print "\n";
 
 my $i = 10;
 while ($i >= 0) {
 	print "$i\n";
 	$i--;
 }
+print "\n";
+
+$i = -1;
+while (1) {
+	$i++;
+	last if($i > 20);
+	next if($i%2 != 0);
+	print "$i\n";
+}
+print "\n";
+
+my $v = "##########";
+for(my $j=9; $j>0; $j--) {
+
+	print ("$j impaire") if ($j%2);
+	print ("-"x$j) unless($j%3);
+	substr($v, $j, 0) = $j;
+}
+print ("$v\n");
