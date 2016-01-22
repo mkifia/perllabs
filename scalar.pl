@@ -16,3 +16,25 @@ $x = $y + 3;
 my $prenom = "Jules";
 my $phrase = "Bonjour $prenom";
 print $phrase."\n";
+
+my $w = undef($x);
+# my $w = undef;
+
+if(defined($w)) {
+	print "\$w defined\n"
+}
+else {
+	print "\$w not defined\n";
+}
+
+print cos(sqrt(2**10));
+print "\n";
+print length($phrase);
+print "\n";
+
+my $v = "Salut toi";
+substr($v, 5, 1) = "ation à ";
+print $v;
+
+print index($v, 'toi');
+print "02" ne "2"
