@@ -37,4 +37,11 @@ substr($v, 5, 1) = "ation à ";
 print $v;
 
 print index($v, 'toi');
-print "02" ne "2"
+print "02" ne "2";
+
+my $developer = 'Thompson';
+my @names = qw(Kernighan Ritchie Pike $developer);
+
+foreach my $name (@names) {
+	print "name :  $name\n";
+}
